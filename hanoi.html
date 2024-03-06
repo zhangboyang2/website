@@ -1,0 +1,22 @@
+<html>
+<script>
+N=0;
+function move(n, source, destination, temp)
+{	
+	if(n==1)
+	{
+		N++;
+		document.writeln("move"+"&nbsp"+"from"+"&nbsp"+source+"&nbsp"+"to"+"&nbsp"+destination+"<br>");
+		console.log("move"+"&nbsp"+"from"+"&nbsp"+source+"&nbsp"+"to"+"&nbsp"+destination);
+	}
+	else
+	{
+		move(n-1,source,temp,destination);
+		move(1,source,destination,temp);
+		move(n-1,temp,destination,source);
+	}
+}
+move(7,'A','B','C');//move three disks from 1 to 3 using 2 as temp storage
+document.writeln("times of moving="+N)
+</script>
+</html>
