@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+
+div.piece
+{
+	position:absolute;
+}
+
+
+
+#p1
+{
+   background:linear-gradient(0deg,red,green);
+   height:300px;
+   left:0px;
+   top:300px;
+   width:300px
+}
+
+#p2
+{
+   background-image:linear-gradient(0deg,red,green);
+   height:300px;
+   left:300px;
+   top:200px;
+   transform:skewY(-45deg);
+   width:200px
+}
+
+#p3
+{
+   background-image:linear-gradient(0deg,green,green);
+   height:200px;
+   left:100px;
+   top:100px;
+   transform:skewX(-45deg);
+   width:300px
+}
+#p0
+{
+	left :300px;top:50px;
+	transform:rotate(20deg);
+	opacity:0.8;
+	background-color:red;
+	visibility:visible;
+	float:none;
+}
+</style>
+</head>
+<body>
+<div class = piece id = p0>
+<div class = piece id = p1></div>
+<div class = piece id = p2></div>
+<div class = piece id = p3></div>
+<div style = text-align:right;>Some text</div>
+</div>

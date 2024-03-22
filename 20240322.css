@@ -1,0 +1,32 @@
+
+#p1
+{
+   background:linear-gradient(0deg,red,green);
+   height:300px;
+   left:0px;
+   position:absolute;
+   top:300px;
+   width:300px
+}
+
+#p2
+{
+   background-image:linear-gradient(0deg,red,green);
+   height:300px;
+   left:300px;
+   position:absolute;
+   top:200px;
+   transform:skewY(-45deg);
+   width:200px
+}
+
+#p3
+{
+   background-image:linear-gradient(0deg,red,green);
+   height:200px;
+   left:100px;
+   position:absolute;
+   top:100px;
+   transform:skewX(-45deg);
+   width:300px
+}
