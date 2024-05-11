@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>汉诺塔</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .box {}
+
+        input {
+            margin: 0 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        button {
+            margin: 0 10px;
+            padding: 5px 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .wrapper {
+            position: relative;
+            top: 100px;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Number of trays/floors:
+        <input type="text" id="count" value="5" />
+        Speed (milliseconds):
+        <input type="text" id="speed" value="400" />
+        <span>Please refresh the page to reset the parameters</span>
+        <button id="start">start</button>
+        <button id="restart">restart</button>
+        <button id="stop">stop</button>
+    </div>
+    <div class="wrapper"></div>
+
+
+    <script src="./jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tank {
+            position: relative;
+            margin: 50px;
+        }
+
+        .tank .middle {
+            width: 10px;
+            height: 180px;
+            background-color: #444;
+            position: absolute;
+        }
+
+        .tank .top {
+            width: 10px;
+            height: 5px;
+            background-color: #666;
+            -moz-border-radius: 60px / 25px;
+            -webkit-border-radius: 60px / 25px;
+            border-radius: 60px / 25px;
+            position: absolute;
+            top: -3px;
+        }
+
+        .tank .bottom {
+            width: 10px;
+            height: 50px;
+            background-color: #444;
+            -moz-border-radius: 60px / 25px;
+            -webkit-border-radius: 60px / 25px;
+            border-radius: 60px / 25px;
+            position: absolute;
+            top: 155px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tank">
+        <div class="bottom"></div>
+        <div class="middle"></div>
+        <div class="top"></div>
+    </div>
+
+
+</body>
+
+</html>
